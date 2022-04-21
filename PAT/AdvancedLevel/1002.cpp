@@ -1,54 +1,39 @@
-//
-// Created by jun on 2020/4/21.
-//
-
-
-#include <iostream>
+// PAT Advance Level 1002
+// Ye Qiu
 #include <cstdio>
-#include <cstdlib>
-#include <cmath>
-#include <cstring>
-#include <algorithm>
-#include <map>
-#include <unordered_map>
-#include <vector>
-#include <queue>
-#include <stack>
 #include <string>
-#include <set>
 
 using namespace std;
 
-// define global variable here
-
-
+/*
+    定义数组保存结果，依次读入A, B行，指数为下标，系数为值累加到结果数组中
+ */
 int main() {
 #ifdef ONLINE_JUDGE
 #else
-    freopen("input/1002.txt", "r", stdin);
+  freopen("./input/1002.txt", "r", stdin);
 #endif
-    // write your code here
-    float c[1001] = {0};
-    int m, n, t;
-    float num;
-    scanf("%d", &m);
-    for (int i = 0; i < m; i++) {
-        scanf("%d%f", &t, &num);
-        c[t] += num;
-    }
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d%f", &t, &num);
-        c[t] += num;
-    }
-    int cnt = 0;
-    for (int i = 0; i < 1001; i++) {
-        if (c[i] != 0) cnt++;
-    }
-    printf("%d", cnt);
-    for (int i = 1000; i >= 0; i--) {
-        if (c[i] != 0.0)
-            printf(" %d %.1f", i, c[i]);
-    }
-    return 0;
+  float result[1001] = {0};
+  int kA, kB, power;
+  float coefficient;
+  scanf("%d", &kA);
+  for (int i = 0; i < kA; i++) {
+    scanf("%d%f", &power, &coefficient);
+    result[power] += coefficient;
+  }
+  scanf("%d", &kB);
+  for (int i = 0; i < kB; i++) {
+    scanf("%d%f", &power, &coefficient);
+    result[power] += coefficient;
+  }
+  int cnt = 0;
+  for (int i = 0; i < 1001; i++) {
+    if (result[i]) cnt++;
+  }
+  printf("%d", cnt);
+  for (int i = 1000; i >= 0; i--) {
+    if (result[i] != 0.0)
+      printf(" %d %.1f", i, result[i]);
+  }
+  return 0;
 }
