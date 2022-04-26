@@ -12,16 +12,16 @@ using namespace std;
 int main(){
 #ifdef ONLINE_JUDGE
 #else
-  freopen("./input/1001.txt", "r", stdin);
+    freopen("./input/1001.txt", "r", stdin);
 #endif
-  int a, b;
-  cin >> a >> b;
-  string s = to_string(a + b);
-  int len = s.length();
-  for (int i = 0; i < len; i++) {
-    cout << s[i];
-    if (s[i] == '-' || i == len - 1) continue;
-    if ((i + 1) % 3 == len % 3 ) cout << ",";
-  }
-  return 0;
+    int a, b;
+    cin >> a >> b;
+    string s = to_string(a + b);
+    int len = s.length();
+    for (int i = 0; i < len; i++) {
+        cout << s[i];
+        if (s[i] == '-' || i == len - 1) continue;
+        if ((i + 1) % 3 == len % 3 ) cout << ",";
+    }
+    return 0;
 }

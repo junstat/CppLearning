@@ -1,13 +1,6 @@
-//
-// Created by jun on 2020/5/7.
-//
-#include <iostream>
+// PAT Advance Level 1009
+// Ye Qiu
 #include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <string>
-#include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -16,18 +9,18 @@ int main() {
 #else
     freopen("input/1009.txt", "r", stdin);
 #endif
-    int lenA, lenB, coefficient, cnt = 0;
+    int lenA, lenB, exponent, cnt = 0;
     scanf("%d", &lenA);
-    double exponent, A[1001] = {0.0}, res[2001] = {0.0};
+    double coefficient, A[1001] = {0.0}, res[2001] = {0.0};
     for (int i = 0; i < lenA; i++) {
-        scanf("%d %lf", &coefficient, &exponent);
-        A[coefficient] = exponent;
+        scanf("%d %lf", &exponent, &coefficient);
+        A[exponent] = coefficient;
     }
     scanf("%d", &lenB);
     for (int i = 0; i < lenB; i++) {
-        scanf("%d %lf", &coefficient, &exponent);
+        scanf("%d %lf", &exponent, &coefficient);
         for (int j = 0; j < 1001; j++) {
-            res[j + coefficient] += A[j] * exponent;
+            res[j + exponent] += A[j] * coefficient;
         }
     }
 

@@ -4,5 +4,6 @@ project(CppLearning)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(CppLearning
-        AlgorithmNote/Chap10/dijkstra_matrix_path.cpp
+        LeetCode/DataStructure/ListNode.h
+        PAT/AdvancedLevel/1011.cpp
         )

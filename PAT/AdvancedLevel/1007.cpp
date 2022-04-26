@@ -1,14 +1,8 @@
-//
-// Created by jun on 2020/5/7.
-//
-
+// PAT Advance Level 1007
+// Ye Qiu
 #include <iostream>
 #include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <string>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -37,4 +31,3 @@ int main() {
     printf("%d %d %d", res, nums[start], nums[end]);
     return 0;
 }
-
