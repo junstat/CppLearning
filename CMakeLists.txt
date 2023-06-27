@@ -4,5 +4,5 @@ project(CppLearning)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(CppLearning
-        LeetCode/Q2499/Q2462/Solution.cpp
+        LeetCode/Q0399/Q0373/Solution.cpp
         )
