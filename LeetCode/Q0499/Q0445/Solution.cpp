@@ -14,7 +14,7 @@ public:
             s2.push(p->val);
 
         int sum = 0;
-        ListNode * head = nullptr;
+        ListNode *head = nullptr;
         while (!s1.empty() || !s2.empty() || sum != 0) {
             int n1 = s1.empty() ? 0 : s1.top();
             int n2 = s2.empty() ? 0 : s2.top();

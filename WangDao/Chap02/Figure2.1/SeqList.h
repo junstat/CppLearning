@@ -5,34 +5,32 @@ using namespace std;
 #ifndef DATASTRUCTURE_SEQLIST_H
 #define DATASTRUCTURE_SEQLIST_H
 
-const int MaxSize = 50;
+#define MaxSize 50
+#define InitSize 100
 typedef int ElementType;
 
-class SeqList {
-public:
-    SeqList();
-
-    bool empty() const;
-
-    void insert(ElementType item, int pos);
-
-    void erase(int pos);
-
-    void display(ostream &out) const;
-
-    // ------------------------------- 王道综合应用题 -------------------------------
-    bool deleteMin(ElementType &value);
-
-    void reverse();
-
-    void reverse2();
-
-    void deleteX(ElementType x);
-private:
-    ElementType data[MaxSize]{};
+typedef struct {
+    ElementType data[MaxSize];
     int length;
-};
+} SqList;
 
-ostream &operator<<(ostream &out, const SeqList &list);
+typedef struct {
+    ElementType *data;
+    int capacity, length;
+} SeqList;
+
+bool ListInsert(SqList &L, int i, ElementType e);
+
+bool ListDelete(SeqList &L, int i, ElementType &e);
+
+int LocateElem(SqList L, ElementType e);
+
+/* --------  应用题 ------------- */
+bool Del_Min(SqList &L, ElementType &value);
+
+void Reverse(SqList &L);
+
+void Reverse2(SqList &L);
+
 
 #endif //DATASTRUCTURE_SEQLIST_H
