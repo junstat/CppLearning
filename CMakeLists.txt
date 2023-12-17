@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(CppLearning
         LeetCode/DataStructure/TreeNode.h
-        LeetCode/Q0099/Q0070/solution2/Solution.cpp
+        LeetCode/Q0099/Q0060/Solution.cpp
 )
