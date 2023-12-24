@@ -1,4 +1,4 @@
-#include "../../DataStructure/ListNode.h"
+#include "../../../DataStructure/ListNode.h"
 
 class Solution {
 public:
