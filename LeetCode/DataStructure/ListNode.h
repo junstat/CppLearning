@@ -1,10 +1,6 @@
 /**
  * Definition for singly-linked list.
  */
-#include <iostream>
-
-using namespace std;
-
 struct ListNode {
     int val;
     ListNode *next;
