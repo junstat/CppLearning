@@ -174,6 +174,14 @@ void modifyPerson(AddressBooks *abs) {
     system("cls");
 }
 
+// 清空所有联系人
+void cleanPerson(AddressBooks *abs) {
+    // 将当前记录联系人数量置为0，做逻辑清空操作
+    abs->m_Size = 0;
+    cout << "通讯录已清空！" << endl;
+    system("cls");
+}
+
 int main() {
     AddressBooks abs; // 创建一个通讯录
     abs.m_Size = 0; // 初始化通讯录中人员个数
@@ -197,8 +205,10 @@ int main() {
                 findPerson(&abs);
                 break;
             case 5: // 5. 修改联系人
+                modifyPerson(&abs);
                 break;
             case 6: // 6. 清空联系人
+                cleanPerson(&abs);
                 break;
             case 0: // 0. 退出通讯录
                 cout << "欢迎下次使用" << endl;

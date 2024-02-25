@@ -4,5 +4,6 @@ project(CppLearning)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(CppLearning
-         AlgorithmNote/Chap06/section03/PAT_A1060.cpp
+        Heima/Part03/section07/print.h
+        LeetCode/Q2499/Q2476/Solution.cpp
 )
