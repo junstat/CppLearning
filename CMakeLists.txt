@@ -4,6 +4,5 @@ project(CppLearning)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(CppLearning
-        Heima/Part03/section07/print.h
-        LeetCode/Q2499/Q2476/Solution.cpp
+        Heima/Part03/section14/02_常用遍历算法_transform.cpp
 )

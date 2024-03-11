@@ -18,6 +18,7 @@ public:
             output.pop();
             return res;
         }
+        return -1; // never reach
     }
 
     int peek() {

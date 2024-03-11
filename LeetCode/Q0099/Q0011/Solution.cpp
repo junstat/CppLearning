@@ -9,12 +9,14 @@ public:
         int left = 0, right = height.size() - 1;
         int maxArea = 0;
 
-        while (left <= right) {
-            maxArea = max(maxArea, min(height[left], height[right]) * (right - left));
-            if (height[left] < maxArea)
+        while (left < right) {
+            if (height[left] < height[right]) {
+                maxArea = max(maxArea, height[left] * (right - left));
                 left++;
-            else
+            } else {
+                maxArea = max(maxArea, height[right] * (right - left));
                 right--;
+            }
         }
         return maxArea;
     }
