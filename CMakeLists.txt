@@ -3,6 +3,9 @@ project(CppLearning)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CppLearning
-        LeetCode/Q3199/Q3151.cpp
-)
+include(${CMAKE_SOURCE_DIR}/depends.cmake)
+include(ADTs/ADTs.cmake)
+add_subdirectory(LeetCode)
+
+
+add_executable(CppLearning ${SOURCES})
