@@ -4,6 +4,7 @@ project(LeetCode)
 include(${CMAKE_SOURCE_DIR}/depends.cmake)
 
 include(Q0099/Q0099.cmake)
+include(Q0999/Q0999.cmake)
 include(Q3199/Q3199.cmake)
 
 message("in LeetCode\\CMakeLists.txt")
