@@ -9,7 +9,7 @@ public:
     void dfs(int n, int row, int col, int ld, int rd) {
         if (row >= n) { res++; return; }
 
-        // 将所有能放置 Q 的位置由 0 变成 1，以便进行后续的位遍历
+        // 将所有能放置 Q0116 的位置由 0 变成 1，以便进行后续的位遍历
         int bits = ~(col | ld | rd) & ((1 << n) - 1);
         while (bits > 0) {
             int pick = bits & -bits; // 注: x & -x
