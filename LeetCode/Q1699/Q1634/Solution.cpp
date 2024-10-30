@@ -1,4 +1,4 @@
-#include "../../DataStructure/PolyNode.h"
+#include "PolyNode.h"
 
 class Solution {
 public:

@@ -1,5 +1,5 @@
 #include <stack>
-#include "../../../DataStructure/ListNode.h"
+#include "ListNode.h"
 
 using namespace std;
 

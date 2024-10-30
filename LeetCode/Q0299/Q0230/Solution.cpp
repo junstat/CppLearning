@@ -1,4 +1,4 @@
-#include "../../DataStructure/TreeNode.h"
+#include "TreeNode.h"
 #include <queue>
 #include <vector>
 #include <algorithm>

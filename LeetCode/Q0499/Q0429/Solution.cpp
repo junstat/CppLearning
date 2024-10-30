@@ -1,6 +1,6 @@
 #include <vector>
 #include <queue>
-#include "../../DataStructure/Node.h"
+#include "Node.h"
 using namespace std;
 
 class Solution {

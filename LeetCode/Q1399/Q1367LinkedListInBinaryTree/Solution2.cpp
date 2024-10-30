@@ -1,6 +1,6 @@
 #include <vector>
-#include "../../DataStructure/ListNode.h"
-#include "../../DataStructure/TreeNode.h"
+#include "ListNode.h"
+#include "TreeNode.h"
 
 /*-------------------------------------------------------------------------
  Solution 2: DP

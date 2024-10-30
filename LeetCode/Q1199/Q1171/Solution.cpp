@@ -1,5 +1,5 @@
 #include <unordered_map>
-#include "../../DataStructure/ListNode.h"
+#include "ListNode.h"
 
 class Solution {
 public:

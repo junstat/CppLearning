@@ -1,5 +1,5 @@
-#include "../../DataStructure/ListNode.h"
-#include "../../DataStructure/TreeNode.h"
+#include "ListNode.h"
+#include "TreeNode.h"
 
 /*-------------------------------------------------------------------------
  Solution 1: Brute DFS

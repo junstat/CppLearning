@@ -38,6 +38,6 @@ public:
     }
 
     bool check(long mid) {
-
+        return false;
     }
 };

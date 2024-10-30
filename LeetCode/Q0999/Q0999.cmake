@@ -1,1 +1,1 @@
-list(APPEND SOURCES ${CMAKE_CURRENT_LIST_DIR}/Q0977/Solution.cpp)
+list(APPEND SOURCES Q0977/Solution.cpp)

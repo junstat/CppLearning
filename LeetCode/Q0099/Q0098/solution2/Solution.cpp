@@ -1,4 +1,4 @@
-#include "../../../DataStructure/TreeNode.h"
+#include "TreeNode.h"
 #include <stack>
 
 using namespace std;

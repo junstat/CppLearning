@@ -18,14 +18,3 @@ public:
         return dummy->next;
     }
 };
-
-int main() {
-    std::vector<int> source = {0, 3, 1, 0, 4, 5, 2, 0};
-    auto head = createList(source);
-    fmt::print("source list: ");
-    printList(head);
-    fmt::print("ans list: ");
-    Solution s;
-    auto ans = s.mergeNodes(head);
-    printList(ans);
-}

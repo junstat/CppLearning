@@ -1,4 +1,4 @@
-#include "../../DataStructure/ListNode.h"
+#include "ListNode.h"
 
 /*-------------------------------------------------------------------------
  Algorithm Description:

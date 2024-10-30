@@ -1,5 +1,5 @@
 #include <vector>
-#include "../../../DataStructure/TreeNode.h"
+#include "TreeNode.h"
 
 using namespace std;
 

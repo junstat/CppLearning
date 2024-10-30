@@ -1,5 +1,5 @@
 #include <queue>
-#include "../../DataStructure/TreeNode.h"
+#include "TreeNode.h"
 
 class Solution {
 public:

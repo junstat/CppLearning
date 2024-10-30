@@ -1,6 +1,6 @@
 #include <unordered_map>
 #include <vector>
-#include "../../DataStructure/ListNode.h"
+#include "ListNode.h"
 
 class Solution {
 public:

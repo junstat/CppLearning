@@ -1,7 +1,8 @@
 #include <vector>
 #include <queue>
-#include <functional>
-#include "../../DataStructure/ListNode.h"
+#include "ListNode.h"
+
+using namespace std;
 
 struct LessThanNode {
     bool operator()(const ListNode *lhs, const ListNode *rhs) {

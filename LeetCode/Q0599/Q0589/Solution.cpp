@@ -1,5 +1,5 @@
 #include <vector>
-#include "../../DataStructure/Node.h"
+#include "Node.h"
 
 using namespace std;
 
