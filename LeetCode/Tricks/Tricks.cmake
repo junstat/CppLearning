@@ -1,0 +1,2 @@
+list(APPEND SOURCES ${CMAKE_CURRENT_LIST_DIR}/src/EnumTest.cpp)
+list(APPEND SOURCES ${CMAKE_CURRENT_LIST_DIR}/src/FileTest.cpp)
